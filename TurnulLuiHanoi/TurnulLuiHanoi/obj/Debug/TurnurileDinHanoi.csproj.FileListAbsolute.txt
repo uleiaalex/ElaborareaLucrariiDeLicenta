@@ -4,3 +4,10 @@ C:\Users\RanZY\source\repos\TurnulLuiHanoi\TurnulLuiHanoi\bin\Debug\TurnulLuiHan
 C:\Users\RanZY\source\repos\TurnulLuiHanoi\TurnulLuiHanoi\obj\Debug\TurnurileDinHanoi.csproj.CoreCompileInputs.cache
 C:\Users\RanZY\source\repos\TurnulLuiHanoi\TurnulLuiHanoi\obj\Debug\TurnulLuiHanoi.exe
 C:\Users\RanZY\source\repos\TurnulLuiHanoi\TurnulLuiHanoi\obj\Debug\TurnulLuiHanoi.pdb
+C:\Users\RanZY\Desktop\Programe\ElaborareaLucrariiDeLicenta\TurnulLuiHanoi\TurnulLuiHanoi\bin\Debug\TurnulLuiHanoi.exe.config
+C:\Users\RanZY\Desktop\Programe\ElaborareaLucrariiDeLicenta\TurnulLuiHanoi\TurnulLuiHanoi\bin\Debug\TurnulLuiHanoi.exe
+C:\Users\RanZY\Desktop\Programe\ElaborareaLucrariiDeLicenta\TurnulLuiHanoi\TurnulLuiHanoi\bin\Debug\TurnulLuiHanoi.pdb
+C:\Users\RanZY\Desktop\Programe\ElaborareaLucrariiDeLicenta\TurnulLuiHanoi\TurnulLuiHanoi\obj\Debug\TurnurileDinHanoi.csprojAssemblyReference.cache
+C:\Users\RanZY\Desktop\Programe\ElaborareaLucrariiDeLicenta\TurnulLuiHanoi\TurnulLuiHanoi\obj\Debug\TurnurileDinHanoi.csproj.CoreCompileInputs.cache
+C:\Users\RanZY\Desktop\Programe\ElaborareaLucrariiDeLicenta\TurnulLuiHanoi\TurnulLuiHanoi\obj\Debug\TurnulLuiHanoi.exe
+C:\Users\RanZY\Desktop\Programe\ElaborareaLucrariiDeLicenta\TurnulLuiHanoi\TurnulLuiHanoi\obj\Debug\TurnulLuiHanoi.pdb

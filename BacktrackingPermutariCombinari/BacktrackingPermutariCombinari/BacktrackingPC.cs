@@ -3,24 +3,24 @@
 class BacktrackingPC
 {
     static string sir = "";
-    static bool gasit = false;
     static int statusSolve = 0;
-    static void combinationUtil(int[] arr, int[] data, int start, int end,
-                         int index, int r)
+
+    static void combinationUtil(int[] arr, int[] data, int start, int end, int index, int r)
     {
         string s = "";
 
-        if (index == r && !gasit)
+        if (index == r) //Se afiseaza permutarile/combinarile
         {
             for (int j = 0; j < r; j++)
             {
                 s += sir[data[j]];
             }
+         
             Console.WriteLine(s);
             return;
         }
 
-        if (statusSolve == 0)
+        if (statusSolve == 0) //Se genereaza Combinarile
         {
             for (int i = start; i <= end && end - i + 1 >= r - index; i++)
             {
@@ -29,7 +29,7 @@ class BacktrackingPC
             }
 
         }
-        else if (statusSolve == 1)
+        else if (statusSolve == 1)//Se genereaza Permutarile
         {
             for (int i = 0; i <= end; i++)
             {
@@ -50,7 +50,7 @@ class BacktrackingPC
     {
 
         Console.WriteLine("Introdu sirul:");
-        sir = Console.ReadLine();
+        sir = Console.ReadLine(); //introducem sirul cu elemente care le vom permuta ex: {a,b,c,d,e}
 
         int[] arr = new int[sir.Length];
 
@@ -62,6 +62,8 @@ class BacktrackingPC
         Console.WriteLine("Pentru combinari - introdu 1");
         Console.WriteLine("Pentru permutari - introdu 2");
 
+
+        //alegem o optiune folosind variabila intermediara statusSolve
         int temp = int.Parse(Console.ReadLine());
         switch (temp)
         {
@@ -75,7 +77,6 @@ class BacktrackingPC
                 break;
         }
 
-
         int n = arr.Length;
 
         //Luate cate r
@@ -86,6 +87,7 @@ class BacktrackingPC
 
         int r = int.Parse(Console.ReadLine());
 
+        //Se verifica sa nu fi dar lui r o valoare mai mare a a lui n, lungimea maxima a sirului
         if (r >= 0 && r <= n)
             for (int j = 1; j <= r; j++)
             {

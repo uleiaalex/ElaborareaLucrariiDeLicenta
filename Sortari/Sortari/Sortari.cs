@@ -17,13 +17,15 @@ class Sortari
         Console.WriteLine();
     }
     //BubbleSort
+    //Verifica cate 2 elemente si se executa pana cand nu se va mai executa nici-o interschimbare pentru ordonare.
     static void Bubble_Sort(ref int[] v)
     {
-        bool sortat = true;
+        bool sortat = true; //Presupunem ca e sortat
         for (int i = 1; i < v.Length; i++)
         {
             sortat = true;
-            for (int j = 1; j < v.Length-i+1; j++)
+            for (int j = 1; j < v.Length-i+1; j++) //Se merge tot sirul, daca v[j]>v[j+1] atunci se interchimba iar atunci sortat devine fals,
+                                                    //si mergem din nou sa verificam daca sirul este sortat
             {
                 if (v[j] > v[j + 1])
                 {
@@ -36,29 +38,34 @@ class Sortari
         }
     }
     //InsertionSort
+    //avem vector-ul v, daca toate elementele dinaintea lui x[i] este ordonata atunci inseram ca ultim element x[i]
+    //iar secventa finala ordonata va fi 0, 1, ..., i-1,i, iar la final vectorul va fi ordonat
     static void Insertion_Sort(ref int[] v)
     {
         for (int i = 1; i < v.Length; ++i)
         {
-            int V = v[i];
+            int elem = v[i];
             int j = i - 1;
-            while (j > 0 && v[j] > V)
+            while (j > 0 && v[j] > elem) // se verifica daca elementele dinaintea pozitiei "i" sunt ordonate crescator si le ordoneaza in acelasi timp.
             {
                 v[j + 1] = v[j];
                 --j;
             }
-            v[j + 1] = V;
+            v[j + 1] = elem;
         }
     }
     //QuickSort // st = 0, dr = v.Length -1
+    //Exista un pivot, elem. de la stanga la el sa fie mai mic decat el si la dr mai mare decat el.
     static int Partitie(int[] v, int st, int dr)
     {
-        int poz = st + rnd.Next(0, dr - st + 1);
+        int poz = st + rnd.Next(0, dr - st + 1); // Se ia pozitia pivot la intamplare
         int tmp = v[poz];
         v[poz] = v[st];
         v[st] = tmp;
         int V = v[st];
         --st; ++dr;
+        //Se reorganizeaza lista in functie de pivot a.i cele mai mici fata de pivot sunt inainte pivotului, iar cele
+        //mai mari decat pivotul sa fie in partea dreapta.
         while (st < dr)
         {
             do
@@ -98,9 +105,12 @@ class Sortari
     {
         if (st < dr)
         {
-            int m = (st + dr) / 2;
+            //Impartim vectorul in 2 subvectori aproximativ egali
+            int m = (st + dr) / 2; // pivotul de mijloc
+            //Se sorteaza cei doi subvectori recursiv tot cu algoritmul merge sort
             Merge_sort(ref v, st, m);
             Merge_sort(ref v, m + 1, dr);
+            // iar la final cei doi vectori se interclaseaza si se optine vectorul final
             Interclasare(v, st, m, dr);
         }
     }
@@ -119,9 +129,10 @@ class Sortari
             B[++k] = v[j++];
         for (i = 1; i <= k; ++i)
             v[st + i - 1] = B[i];
-        //delete B;
     }
     //Selection Sort
+    //Se verifica minimul, se compara cu restul elementelor, daca se gaseste alt minim atunci acesta devine minim
+    //iar la final de sir se interschimba elementul i cu elementul de pe pozitia min.
     static void Selection_SortMin(ref int[] v)
     {
         for (int i = 0; i < v.Length-1; i++)

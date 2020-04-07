@@ -1,34 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 class Program
 {
+
+    //Turnurile din Hanoi pentru un numar limita de 3 tije asezate in ordine descrescatoare de jos in sus
     static void turnudinhanoi()
     {
       
-        char startCol = 'A';
-        char endCol = 'C';
-        char tempCol = 'B';
-        int totalDiscuri = 3; 
+        char startCol = 'A';//  Prima tija
+        char endCol = 'C';//    tija finala/destinatia
+        char tempCol = 'B';//   tija de ajutor/auxiliara
+        int totalDiscuri = 3;// numarul finit de discuri
 
-        solveTowers(totalDiscuri, startCol, endCol, tempCol);
+        rezolva(totalDiscuri, startCol, endCol, tempCol);
 
-        void solveTowers(int n, char start, char end, char aux)
+        void rezolva(int n, char start, char end, char aux)//Afisam reucursiv mutarile care se fac de pe o tija pe alta...
         {
             if (n > 0)
             {
-                solveTowers(n - 1, start, aux, end);
+                rezolva(n - 1, start, aux, end);
                 Console.WriteLine("Move disk from " + start + ' ' + end);
-                solveTowers(n - 1, aux, end, start);
-
+                rezolva(n - 1, aux, end, start);
             }
         }
     }
     static void Main(string[] args)
     {
+        //Chemam functia turnurile din hanoi
         turnudinhanoi();
         Console.ReadKey();
     }
