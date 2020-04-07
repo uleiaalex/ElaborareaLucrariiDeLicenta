@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BacktrackingPermutariCombinari", "BacktrackingPermutariCombinari\BacktrackingPermutariCombinari.csproj", "{53146AB5-5F0D-42EC-8C9E-B114D7875DEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53146AB5-5F0D-42EC-8C9E-B114D7875DEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53146AB5-5F0D-42EC-8C9E-B114D7875DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53146AB5-5F0D-42EC-8C9E-B114D7875DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53146AB5-5F0D-42EC-8C9E-B114D7875DEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAD19537-431D-42E4-8EB5-07D2FF09A60D}
+	EndGlobalSection
+EndGlobal

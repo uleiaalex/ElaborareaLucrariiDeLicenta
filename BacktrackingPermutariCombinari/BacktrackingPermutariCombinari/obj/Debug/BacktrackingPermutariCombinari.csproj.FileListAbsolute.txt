@@ -1,0 +1,7 @@
+C:\Users\RanZY\source\repos\BacktrackingPermutariCombinari\BacktrackingPermutariCombinari\bin\Debug\BacktrackingPermutariCombinari.exe.config
+C:\Users\RanZY\source\repos\BacktrackingPermutariCombinari\BacktrackingPermutariCombinari\bin\Debug\BacktrackingPermutariCombinari.exe
+C:\Users\RanZY\source\repos\BacktrackingPermutariCombinari\BacktrackingPermutariCombinari\bin\Debug\BacktrackingPermutariCombinari.pdb
+C:\Users\RanZY\source\repos\BacktrackingPermutariCombinari\BacktrackingPermutariCombinari\obj\Debug\BacktrackingPermutariCombinari.csprojAssemblyReference.cache
+C:\Users\RanZY\source\repos\BacktrackingPermutariCombinari\BacktrackingPermutariCombinari\obj\Debug\BacktrackingPermutariCombinari.csproj.CoreCompileInputs.cache
+C:\Users\RanZY\source\repos\BacktrackingPermutariCombinari\BacktrackingPermutariCombinari\obj\Debug\BacktrackingPermutariCombinari.exe
+C:\Users\RanZY\source\repos\BacktrackingPermutariCombinari\BacktrackingPermutariCombinari\obj\Debug\BacktrackingPermutariCombinari.pdb

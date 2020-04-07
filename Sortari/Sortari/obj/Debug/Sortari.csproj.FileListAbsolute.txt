@@ -1,0 +1,7 @@
+C:\Users\RanZY\source\repos\Sortari\Sortari\bin\Debug\Sortari.exe.config
+C:\Users\RanZY\source\repos\Sortari\Sortari\bin\Debug\Sortari.exe
+C:\Users\RanZY\source\repos\Sortari\Sortari\bin\Debug\Sortari.pdb
+C:\Users\RanZY\source\repos\Sortari\Sortari\obj\Debug\Sortari.csprojAssemblyReference.cache
+C:\Users\RanZY\source\repos\Sortari\Sortari\obj\Debug\Sortari.csproj.CoreCompileInputs.cache
+C:\Users\RanZY\source\repos\Sortari\Sortari\obj\Debug\Sortari.exe
+C:\Users\RanZY\source\repos\Sortari\Sortari\obj\Debug\Sortari.pdb
