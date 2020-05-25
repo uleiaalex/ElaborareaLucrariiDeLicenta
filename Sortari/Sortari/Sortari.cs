@@ -20,22 +20,23 @@ class Sortari
     //Verifica cate 2 elemente si se executa pana cand nu se va mai executa nici-o interschimbare pentru ordonare.
     static void Bubble_Sort(ref int[] v)
     {
-        bool sortat = true; //Presupunem ca e sortat
-        for (int i = 1; i < v.Length; i++)
+        int k = 0;
+        bool ok;
+        do
         {
-            sortat = true;
-            for (int j = 1; j < v.Length-i+1; j++) //Se merge tot sirul, daca v[j]>v[j+1] atunci se interchimba iar atunci sortat devine fals,
-                                                    //si mergem din nou sa verificam daca sirul este sortat
+            ok = true;
+            for (int i = 0; i < v.Length - 1 - k; i++)
             {
-                if (v[j] > v[j + 1])
+                if (v[i] > v[i + 1])
                 {
-                    sortat = false;
-                    int aux = v[j];
-                    v[j] = v[j + 1];
-                    v[j + 1] = aux;
+                    int aux = v[i];
+                    v[i] = v[i + 1];
+                    v[i + 1] = aux;
+                    ok = false;
                 }
             }
-        }
+            k++;
+        } while (!ok);
     }
     //InsertionSort
     //avem vector-ul v, daca toate elementele dinaintea lui x[i] este ordonata atunci inseram ca ultim element x[i]
@@ -45,11 +46,11 @@ class Sortari
         for (int i = 1; i < v.Length; ++i)
         {
             int elem = v[i];
-            int j = i - 1;
-            while (j > 0 && v[j] > elem) // se verifica daca elementele dinaintea pozitiei "i" sunt ordonate crescator si le ordoneaza in acelasi timp.
+            int j = i-1;
+            while (j >= 0 && v[j] > elem) // se verifica daca elementele dinaintea pozitiei "i" sunt ordonate crescator si le ordoneaza in acelasi timp.
             {
                 v[j + 1] = v[j];
-                --j;
+                j--;
             }
             v[j + 1] = elem;
         }
@@ -170,7 +171,7 @@ class Sortari
 
     static void Main(string[] args)
     {
-        int[] v = { };
+        int[] v = {};
 
         Console.Write("Lungimea sirului de numere: ");
         int n = int.Parse(Console.ReadLine());
@@ -212,7 +213,7 @@ class Sortari
                 Merge_sort(ref v, 0, v.Length - 1);
                 break;
             case 5:
-                Selection_SortMin(ref v);
+                Selection_SortMax(ref v);
                 break;
             default:
                 Environment.Exit(0);
